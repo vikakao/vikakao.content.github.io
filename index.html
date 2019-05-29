@@ -9,6 +9,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/css/flexslider.css">
+	<link rel="stylesheet" href="assets/css/animsition.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <style>
@@ -81,6 +89,7 @@ li {
     padding-bottom: 0.3%;
     padding-top: 0.3%;
     font-weight: bold;
+    margin-bottom: 2%;
    }
    .navbar-default {
    	     border: none;
@@ -105,14 +114,19 @@ li {
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
    }
-   @media (max-width: 900px){
- .content > div , .pare > div , .about > div ,.menu > div , .bottom > div {
-  width: 95%;
+   @media (max-width: 400px){
+ .content > div , .pare > div , .about > div ,.menu > div , {
+  width: 100%;
+}
  }
-
+@media (max-width: 900px) {
+ .bottom > div  {
+	width: 100%;
+}
+}
   
 </style>
-<body>
+<body class="animsition">
 <header>
 	<nav class="navbar navbar-default" style="background-color:transparent; ">
   <div class="container-fluid">
@@ -158,8 +172,11 @@ li {
  					<p style="margin-bottom: -1.6%;">
  						<span class="we">WE'RE</span>
  					</p>
- 					<h1 style="border: 10px solid #60606e; padding-top: 1%; padding-bottom: 1%;margin-right: 30%; margin-left: 30%;">
- 					CREATIVE AGENCY
+ 					<h1 style="margin-top: 30px; margin-bottom: 20px;">
+ 						<span style="border: 10px solid #60606e;text-align: center;">
+ 						CREATIVE AGENCY
+ 					</span>
+ 					
  					</h1>
         <h4 style="font-size: 16px;margin-right: 30%; margin-left: 30%">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -170,29 +187,40 @@ li {
  	</div>
  </div>
 
-  <div class="container">
- 	<div class="row" >
- 		<div class="col-lg-12" >
- 			<div class="pare" style="padding-top: 10%; padding-bottom: 15%">
- 				<div class="photo" style="padding-top: 1%; position: absolute;">
- 					<img src="https://cdn1.savepice.ru/uploads/2019/5/28/0f9b10c0f618599508af6452fded1a49-full.png" alt="">
- 				</div>
- 				<div  style=" color:#60606e;  padding-top:4%; float: right; position: relative;">
+ <div class="container">
+		<div class="agency">
+			<div class="col-md-5 col-sm-12">
+				<div class="row" style="padding-bottom: 15%" >
+					<img style="position: absolute;" src="https://cdn1.savepice.ru/uploads/2019/5/28/0f9b10c0f618599508af6452fded1a49-full.png" alt="">
+				</div>
+			</div>
+			<div class="col-md-offset-1 col-md-6 col-sm-12">
+				<div class="row">
+					<div  style=" color:#60606e;  padding-top:4%; float: right; position: relative;">
  					<h1 style=" padding-bottom: 5%; font-size: 22px; font-weight: bold;">
  						<span class="bl">HIST</span>ORY OF AGENCY
  					</h1>
         <h4 style="font-size: 14px; padding-bottom:2%;">
-        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        	<p> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </h4>
-        
- 			</div>
- 		</div>
- 	</div>
- </div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
+						consequat. in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. 
+					</p>
+				</h4>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+  
 </header>
 
-<main>
+<main class="services">
+	
 <div class="container">
  	<div class="row" >
  		<div class="col-lg-12" >
@@ -209,79 +237,71 @@ li {
  		</div>
  	</div>
  </div>
-	 <div class="container">
- 	<div class="row" >
- 		<div class="col-lg-12" >
- 			<div class="about" style="padding-top: 10%; padding-bottom: 35%">
- 				
- 				<div  style=" color:#60606e;">
- <table width="100%" cellspacing="100" cellpadding="100" style="text-transform: uppercase;">
-   <tr> 
-    <td width="300" valign="top">
-    	<i class="glyphicon glyphicon-refresh"></i>
-    	<p>
-    		<h1 style="font-size: 16px; font-weight: bold;">UNLIMITED OPTIONS</h1>
-    		<ul class="for">
-    			<li>branding</li>
-    			<li>design & copywriting</li>
-    			<li>concept development</li>
-    			<li>user experience</li>
-    		</ul>
-    	</p>
-    	
-    </td>
-    <td  width="400" valign="top" style="padding-left:15%;">
-    	<i class="fa fa-random" aria-hidden="true"></i>
-		<p>
-    		<h1 style="font-size: 16px; font-weight: bold;">DESIGN & DEVELOPMENT</h1>
-    		<ul class="for">
-    			<li>information architecture</li>
-    			<li>interface design</li>
-    			<li>product design</li>
-    			<li>integrated ad companies</li>
-    		</ul>
-    	</p>
-    	
-    </td>
-   </tr>
-   <tr> 
-    <td width="300" valign="top">
-    	<i class="fa fa-shopping-cart"></i>
-    	<p>
-    		<h1 style="font-size: 16px; font-weight: bold;">E-COMMERCE</h1>
-    		<ul class="for">
-    			<li>prototyping</li>
-    			<li>technical consalting</li>
-    			<li>web applications</li>
-    			<li>quality testing</li>
-    		</ul>
-    	</p>
-    	
-    </td>
-    <td width="400" valign="top" style="padding-left:15%;">
-    	<i class="fa fa-sliders"></i>
-		<p>
-    		<h1 style="font-size: 16px; font-weight: bold; ">CUSTOMIZABLE DESIGN</h1>
-    		<ul class="for">
-    			<li>information architecture</li>
-    			<li>interface design</li>
-    			<li>product design</li>
-    			<li>integrated ad companies</li>
-    		</ul>
-    	</p>
-    	
-    </td>
-   </tr>
-  </table>
- 			</div>
- 			<div class="photo 2" style=" float: right;">
- 				<img src="https://cdn1.savepice.ru/uploads/2019/5/28/d8bb0b674a31c10fa201223e023b13a2-full.png" alt="">
- 			</div>
- 		</div>
- 	</div>
  </div>
- </div>
+ <div class="container">
+ <div class="col-md-7 col-sm-12 services-left wow fadeInUp">
+				<div class="row" style="margin-bottom:100px">
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<p><i class="glyphicon glyphicon-refresh"></i></p>
+							<span class="montserrat-text uppercase service-title" style="font-weight: bold;">unlimited options</span>
+							<ul>
+								<li>branding</li>
+								<li>design &amp; copywriting</li>
+								<li>concept development</li>
+								<li>user experience</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<p><i class="fa fa-random" aria-hidden="true"></i></i></p>
+							<span class="montserrat-text uppercase service-title" style="font-weight: bold;" >design &amp; development</span>
+							<ul>
+								<li>branding</li>
+								<li>design &amp; copywriting</li>
+								<li>concept development</li>
+								<li>user experience</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<p><i class="fa fa-shopping-cart"></i></i></p>
+							<span class="montserrat-text uppercase service-title" style="font-weight: bold;">e-commerce</span>
+							<ul>
+								<li>branding</li>
+								<li>design &amp; copywriting</li>
+								<li>concept development</li>
+								<li>user experience</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="row">
+							<p><i class="fa fa-sliders"></i></i></p>
+							<span class="montserrat-text uppercase service-title" style="font-weight: bold;">customizable design</span>
+							<ul>
+								<li>branding</li>
+								<li>design &amp; copywriting</li>
+								<li>concept development</li>
+								<li>user experience</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-12 services-right wow fadeInUp" data-wow-delay=".1s">
+				<div class="row">
+					<img src="https://cdn1.savepice.ru/uploads/2019/5/28/d8bb0b674a31c10fa201223e023b13a2-full.png" alt="image">
+				</div>
+			</div>
 
+		</div>
+		
+	
  <div class="container">
  	<div class="row" >
  		<div class="col-lg-12" >
@@ -374,6 +394,8 @@ li {
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+	
 
 </body>
 </html>
