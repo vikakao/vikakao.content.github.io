@@ -107,18 +107,20 @@ li {
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
    }
-   @media (max-width: 1200px){
- .content > div , .pare > div , .about > div ,.menu > div , {
-  width: 100%;
-}
- }
-@media (max-width: 1200px) {
- .bottom > div  {
-	width: 100%;
-}
-}
-  
-</style>
+   /* @media (max-width: 600px){
+    .content > div , .pare > div , .about > div ,.menu > div , {
+     width: 100%;
+   }
+    }
+   @media (max-width: 900px) {
+    .bottom > div  {
+   	width: 100%;
+   }
+   } */
+   @media screen and (max-width: 1280px) { div.content , div.pare, div.about, div.menu, div.bottom {width: 1200px;} }
+   @media screen and (max-width: 1140px) { div.content , div.pare, div.about, div.menu, div.bottom  {width: 1024px;} }
+   @media screen and (max-width: 992px) { div.content , div.pare, div.about, div.menu, div.bottom  {width: 970px;} }
+   </style>
 <body class="animsition">
 <header>
 	<nav class="navbar navbar-default" style="background-color:transparent; ">
